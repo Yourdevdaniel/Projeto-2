@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="cabecalho">
+            <h2>Cadastro de Ficha médica</h2>
+        </div>
+        <div class="nav">
+            <a href="#"> Inicio </a> |
+            <a href="#"> Ficha </a>  |
+            <a href="#"> Sobre</a>  
+        </div>
+            <div class="container">
+                <h1>Identificação</h1>
+                <p>Porfavor preencha as informações corretamente</p>
+                <hr>
+                <label for="nome"><b>Nome Completo</b>
+                    <input type="text" placeholder="Insira seu nome" name="nome" id="Nome" required>
+                </label>
+
+                <label for="data"><b>Data de nascimento</b><br>
+                    <input type="date" placeholder="00/00/00" name="data" id="data" required>
+                </label>
+                <br>
+
+                <label for="idade"><b>Idade</b><br>
+                    <input type="number" placeholder="20" name="idade" id="Nome" required>
+                </label>
+                <br>
+
+                <label for="sexo"><b>Sexo</b><br><br>
+                    <select id="sexo" name="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outros">Outros</option>
+                    </select> <br><br>
+                    <input type="submit" value="Enviar">
+                </label>
+                
+                <br>
+                <br>
+                <br>
+
+                <label for="cpf "><b>CPF</b>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                    <input type="submit" value="Enviar">
+                </label>
+
+                <br>
+                <br>
+                <br>
+
+                <label for="endereco"><b>Endereço</b>
+                    <input type="text" name="endereco" id="endereco" required>
+                </label>
+
+                <label for="Telefone"><b>Telefone</b>
+                    <input type="tel" placeholder="(99) 9999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" name="telefone" id="telefone" required>
+                </label>
+                <br>
+                <br>
+                <br>
+
+                <label for="contato"><b>Contato de emergência</b>
+                    <input type="tel" placeholder="(99) 9999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" name="contato" id="contato" required>
+                </label>
+
+                <hr>
+            </div>
+            <div class="container">
+                <h2>Informações Medicas Basicas</h2>
+                <label for="altura"><b>Altura (CM)</b>
+                    <input type="number" id="altura" name="altura" step="0.01" min="0" max="3" placeholder="1.75" required>
+                </label>
+                
+                <label for="peso">Peso (KG)
+                    <input type="number" id="peso" name="peso" step="0.1" min="0" max="500" placeholder="70.5" required>
+                </label>
+                <label for="sangue"><b>Tipo sanguíneo</b><br>
+                        <select id="sangue" name="sangue" class="select--disabled">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="NS">Não Sei</option>
+                        </select><br>
+                        <input type="submit" value="Enviar">
+                </label>
+
+                        
+                        <p><b>Alergias</b></p>
+                        <label for="nenhuma" class="caixa">Nenhuma
+                            <input type="checkbox" checked="checked" id="Nenhuma" name="Nenhuma" value="Nenhuma" required>
+                            <span class="check"></span>
+                        </label>
+                        <br><br>
+
+                        <label for="medicamento"><b>Medicamentos:</b></label>
+                        <input type="text" id="medicamento" name="medicamento" required>
+
+                        <label for="alimentos"><b>Alimentos:</b></label>
+                        <input type="text" id="alimentos" name="alimentos" required>
+
+                        <label for="outros"><b>Outros:</b></label>
+                        <input type="text" id="OutrosA" name="Outros" required>
+                        <hr>
+            </div>
+
+            <div class="container">
+                <h2>Historico de saúde</h2>
+
+                <label for="doenças"><b>Doenças atuais ou cronicas</b>
+                    <input type="text" id="doenças" name="doenças" required>
+                </label>
+
+                <label for="cirurgia"><b>Cirurgias anteriores</b>
+                    <input type="text" id="cirurgia" name="cirurgia" required>
+                </label>
+
+                <label for="internacao"><b>Internações anteriores</b>
+                    <input type="text" id="internacao" name="internacao" required>
+                </label>
+                <hr>
+            </div>
+            <div class="container">
+                <h2>Hábitos de vida</h2>
+                <label for="fisico" class="caixa">Fuma
+                    <input type="checkbox" checked="checked" id="Fuma" name="Fuma" value="Fuma" required>
+                    <span class="check"></span>
+                </label>
+
+            <label for="fisico" class="caixa">Bebe alcool
+                    <input type="checkbox" checked="checked" id="alcool" name="alcool" value="alcool" required>
+                    <span class="check"></span>
+                </label>
+
+                <label for="fisico" class="caixa">Faz exercícios fisicos
+                    <input type="checkbox" checked="checked" id="fisico" name="fisico" value="fisico" required>
+                    <span class="check"></span>
+                </label>
+                
+                <br>
+
+                <label for="alimentacao"><b>Alimentação especial</b>
+                    <input type="text" id="alimentacao" name="alimentacao" placeholder="(ex.: vegetariano)" required>
+                </label>
+                <hr>
+            </div>
+            <div class="container">
+                <h2>Observações Adicionais</h2>
+                <textarea id="Observacao" name="Observacao"></textarea>
+            </div>
+        <label class="botao">
+            <button type="submit" class="botao">Registrar a ficha</button>
+        </label>
+    </form>
+
+ <script src="script.js"></script> 
+</body>
+</html>
